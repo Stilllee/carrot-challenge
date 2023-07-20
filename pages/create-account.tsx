@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -38,7 +39,7 @@ export default () => {
   };
   return (
     <div>
-      <h1>Create Account</h1>
+      <h1 className="text-3xl font-bold">Create Account</h1>
       <form onSubmit={handleSubmit(onValid)}>
         <div>
           <label htmlFor="name">Name: </label>
@@ -60,6 +61,7 @@ export default () => {
         </div>
         <button>Create Account</button>
       </form>
+      <Link href="/log-in">Log in</Link>
     </div>
   );
 };
