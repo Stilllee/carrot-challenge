@@ -5,7 +5,7 @@ const LogoutButton = () => {
   const handleLogout = async () => {
     try {
       await fetch("/api/users/logout", { method: "POST" });
-      router.push("/log-in");
+      router.replace("/log-in");
     } catch (error) {
       console.error("로그아웃 실패:", error);
     }

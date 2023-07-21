@@ -26,8 +26,12 @@ export default () => {
       });
       if (request.status === 200) {
         router.push("/");
+      } else if (request.status === 404) {
+        alert("Account not found! Please create an account first.");
+        router.replace("/create-account");
       } else {
         setLoading(false);
+        alert("Log in failed! Please try again.");
       }
     }
   };
