@@ -30,7 +30,7 @@ export default () => {
         alert("Account already exists! Please log in!");
       }
       if (request.status === 201) {
-        alert("Account already created! Please log in!");
+        alert("Your account has been created! Please log in!");
       }
       if (request.status !== 405) {
         router.push("/log-in");
