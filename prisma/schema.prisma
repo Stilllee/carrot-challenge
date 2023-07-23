@@ -27,7 +27,7 @@ model Tweet {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    Int
   text      String
-  like      Like[]
+  likes     Like[]
 }
 
 model Like {

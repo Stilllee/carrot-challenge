@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (error) {
-      router.replace("/create-account");
+      router.replace("/log-in");
     }
   }, [router, error]);
 
