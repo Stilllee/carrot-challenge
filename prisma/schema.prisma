@@ -17,7 +17,7 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   tweets    Tweet[]
-  like      Like[]
+  likes     Like[]
 }
 
 model Tweet {
